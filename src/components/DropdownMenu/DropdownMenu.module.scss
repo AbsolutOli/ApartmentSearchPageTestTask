@@ -1,0 +1,50 @@
+.dropdown{
+    position: absolute;
+    top: 108%;
+    left: -20%;
+
+    background-color: #ffffff;
+    padding: 40px 0;
+    border: 1px solid #b8b7b2;
+    border-radius: 8px;
+    filter: drop-shadow(0 0 10px rgb(153, 153, 159, 0.3));
+    width: 200px;
+    display: flex;
+    justify-content: center;
+
+    
+
+    &__list{
+        text-align: right;
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        overflow-y: auto;
+        direction: ltr;
+        padding-right: 25px;
+        width: 155px;
+    
+        &::-webkit-scrollbar{
+            width: 8px;
+            
+        }
+
+        &::-webkit-scrollbar-track{
+            background: #d9d9d9;
+            border-radius: 5px;
+        }
+
+        &::-webkit-scrollbar-thumb{
+            background: #b45e5f;
+            border-radius: 5px;
+        }
+    }
+
+    &__item{
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        column-gap: 5px;
+        direction: rtl;
+    }
+}
