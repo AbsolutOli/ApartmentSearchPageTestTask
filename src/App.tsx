@@ -1,6 +1,8 @@
 import { TextBlock } from "./components/TextBlock";
 import MainImage from "./assets/img/Group 1000002736.png";
 import DealBackImg from "./assets/img/bottomimg.jpg";
+import { Switch } from "./components/Switch";
+import { Slider } from "./components/Slider";
 
 function App() {
   return (
@@ -22,6 +24,30 @@ function App() {
               <h3> בעלי מקצוע</h3>
               <span className="icon-negotiation-converted"></span>
             </div>
+            <div className="sliderBlock__orderedList">
+              <ol>
+                <li>
+                  קונסקטורר אדיפיסינג אלית לורם איפסום דולור סיט אמט, קונסקטורר
+                </li>
+                <li>
+                  קונסקטורר אדיפיסינג אלית לורם איפסום דולור סיט אמט, קונסקטורר
+                </li>
+                <li>
+                  קונסקטורר אדיפיסינג אלית לורם איפסום דולור סיט אמט, קונסקטורר
+                </li>
+                <li>
+                  קונסקטורר אדיפיסינג אלית לורם איפסום דולור סיט אמט, קונסקטורר
+                </li>
+                <li>
+                  קונסקטורר אדיפיסינג אלית לורם איפסום דולור סיט אמט, קונסקטורר
+                </li>
+                <li>
+                  קונסקטורר אדיפיסינג אלית לורם איפסום דולור סיט אמט, קונסקטורר
+                </li>
+              </ol>
+            </div>
+            <Slider />
+            <Switch />
           </div>
         </div>
       </div>
