@@ -50,5 +50,25 @@ body {
     }
   }
 
-  
+  .sliderBlock{
+    &__orderedList{
+        ol{
+            // display: flex;
+            // flex-direction: column;
+            // flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-auto-flow: column;
+
+            direction: rtl;
+            li{
+                
+                width: 145px;
+                height: 110px;
+            }
+        }
+        
+    }
+  }
 }
