@@ -3,8 +3,17 @@ import MainImage from "./assets/img/Group 1000002736.png";
 import DealBackImg from "./assets/img/bottomimg.jpg";
 import { Switch } from "./components/Switch";
 import { Slider } from "./components/Slider";
+import { useTranslation } from "react-i18next";
+
+import "./i18n/config";
 
 function App() {
+  const { i18n } = useTranslation();
+
+  const changeLang = (lang: any) => {
+    i18n.changeLanguage(lang);
+  };
+
   return (
     <div className="wrapper">
       <div className="container">
@@ -49,6 +58,10 @@ function App() {
           </div>
           <Slider />
           <Switch />
+          <div className="langButtons">
+            <button onClick={() => changeLang("en")}>EN</button>
+            <button onClick={() => changeLang("he")}>HE</button>
+          </div>
         </div>
       </div>
     </div>

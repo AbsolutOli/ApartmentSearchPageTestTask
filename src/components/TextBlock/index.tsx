@@ -1,13 +1,17 @@
 import { DropdownMenu } from "../DropdownMenu";
 import styles from "./TextBlock.module.scss";
 import clsx from "clsx";
+import { useTranslation } from "react-i18next";
 
 export const TextBlock: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <div className={styles.textBlock}>
       <div className={styles.textBlock__conteiner}>
         <h2 className={styles.textBlock__title}>
-          <span> מתווך?</span> הגדל את המכירות שלך!
+          <span>{t("textBlock__title_span")} </span>
+          {t("textBlock__title")}
         </h2>
         <p className={styles.textBlock__text}>
           באמצעות טכנולוגיה חדשנית המאפשרת לבנות מודל תלת ממדי של הנכס, אתר
