@@ -1,27 +1,24 @@
 import styles from "./DropdownMenu.module.scss";
-
-const listItems: string[] = [
-  " דכון פרופיל",
-  " חתכים שלי",
-  " ים שאהבתי",
-  " בעלי מקצוע",
-  " התנתקות",
-  " דכון פרופיל",
-  " דכון פרופיל",
-  " חתכים שלי",
-  " ים שאהבתי",
-  " בעלי מקצוע",
-  " התנתקות",
-  " דכון פרופיל",
-  " דכון פרופיל",
-  " חתכים שלי",
-  " ים שאהבתי",
-  " בעלי מקצוע",
-  " התנתקות",
-  " דכון פרופיל",
-];
+import { useTranslation } from "react-i18next";
 
 export const DropdownMenu: React.FC = () => {
+  const { t } = useTranslation();
+
+  const listItems: string[] = [
+    t("dropdown.list.item1"),
+    t("dropdown.list.item2"),
+    t("dropdown.list.item3"),
+    t("dropdown.list.item4"),
+    t("dropdown.list.item5"),
+    t("dropdown.list.item5"),
+    t("dropdown.list.item1"),
+    t("dropdown.list.item2"),
+    t("dropdown.list.item3"),
+    t("dropdown.list.item4"),
+    t("dropdown.list.item5"),
+    t("dropdown.list.item5"),
+  ];
+
   return (
     <div className={styles.dropdown}>
       <ul className={styles.dropdown__list}>

@@ -1,4 +1,32 @@
 {
-    "textBlock__title": "ipsum dolor sit amen",
-    "textBlock__title_span": "Lorem"
+    "textBlock": {
+        "title": "ipsum dolor sit amen",
+        "span": "Lorem",
+        "text": "Usura porttitor technicae artis quae permittit ut tres dimensiva exemplar proprietatis aedifices, situs GetKey aegrotat in agro digitalis venalicium et rejuvenat te ad porttitor mundum multo pulchrius quam hodie. Semel pro magis notitia aegrotat in agro digitalis venalicium et rejuvenat",
+        "moreInfo": {
+            "check": "Discere plus",
+            "info": "Ut consequat ac nisl Haim"
+        },
+        "buttomText": "Lorem Ipsumoh Ivan Si, in Rometz ut scribae diurnariis"
+    },
+    "sliderBlock":{
+        "title": "Lorem",
+        "orderedList": "Ipsum Dolor Sit Emmet, Sectorer Consector Sectorer Consector"
+    },
+    "langButtons": "Choose your language: ",
+    "switch": {
+        "text": "Habesne quaestionem? Loquere ad nos",
+        "yes": "Yes",
+        "no": "No"
+    },
+    "dropdown": {
+        "list": {
+            "item1": "Profile",
+            "item2": "Lorem",
+            "item3": "discussio",
+            "item4": "Meamcuts",
+            "item5": "Update",
+            "item6": "Quodamavi"
+        }
+    }
 }

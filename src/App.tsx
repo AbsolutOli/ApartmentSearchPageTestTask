@@ -8,7 +8,7 @@ import { useTranslation } from "react-i18next";
 import "./i18n/config";
 
 function App() {
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const changeLang = (lang: any) => {
     i18n.changeLanguage(lang);
@@ -30,37 +30,28 @@ function App() {
         <div className="sliderBlock">
           <div className="sliderBlock__top">
             <div className="sliderBlock__title">
-              <h3> בעלי מקצוע</h3>
+              <h3>{t("sliderBlock.title")}</h3>
               <span className="icon-negotiation-converted"></span>
             </div>
           </div>
           <div className="sliderBlock__orderedList">
             <ol>
-              <li>
-                קונ אדיפיסינג אלית לורם איפסום דולור סיט אמט, סקטורר קונסקטורר
-              </li>
-              <li>
-                קונסקטורר אדיפיסינג דולור אלית לורם איפסוםסיט אמט, קונסקטורר
-              </li>
-              <li>
-                קונסקטורר אדיפיסינג אלית לורם סיט אמט איפסום דולור, קונסקטורר
-              </li>
-              <li>
-                קונסקטורר אדיפיסינג לורם איפסום אלית דולור סיט אמט, קונסקטורר
-              </li>
-              <li>
-                קונסקטורר אלית לורם איפסום דולור אדיפיסינגסיט אמט, קונסקטורר
-              </li>
-              <li>
-                קונסקטוררלורם איפסום אדיפיסינג אלית דולור סיט אמט, קונסקטורר
-              </li>
+              <li>{t("sliderBlock.orderedList")}</li>
+              <li>{t("sliderBlock.orderedList")}</li>
+              <li>{t("sliderBlock.orderedList")}</li>
+              <li>{t("sliderBlock.orderedList")}</li>
+              <li>{t("sliderBlock.orderedList")}</li>
+              <li>{t("sliderBlock.orderedList")}</li>
             </ol>
           </div>
           <Slider />
           <Switch />
           <div className="langButtons">
-            <button onClick={() => changeLang("en")}>EN</button>
-            <button onClick={() => changeLang("he")}>HE</button>
+            <p>{t("langButtons")}</p>
+            <div>
+              <button onClick={() => changeLang("en")}>EN</button>
+              <button onClick={() => changeLang("he")}>HE</button>
+            </div>
           </div>
         </div>
       </div>
